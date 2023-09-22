@@ -6,6 +6,16 @@
  * Instead, add your own CSS in the custom.css file
  *************************************************************************/
 
+ .col-container {
+  display: table; /* Make the container element behave like a table */
+  width: 100%; /* Set full-width to expand the whole page */
+}
+
+.col {
+  display: table-cell; /* Make elements inside the container behave like table cells */
+}
+
+
 .custom-image-button {
   display: flex;
   flex-direction: column;
