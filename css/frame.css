@@ -92,7 +92,7 @@ hr {
   /* LARGEUR MENU */
   position: relative;
   margin: 0 auto;
-  max-width: 1250px; 
+  max-width: 1125px; 
 }
 
 .menu .menu-table {
@@ -250,7 +250,8 @@ hr {
   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
   font-weight: 300;
   line-height: 1.5;
-  max-width: 1100px;
+  /* LARGEUR CONTENT */
+  max-width: 1150px; 
   overflow-x: auto;
 }
 
@@ -386,7 +387,7 @@ hr {
 }
 
 .text {
-  margin: 10px 0 10px 0;
+  margin: 5px 0 5px 0;
   padding: 0;
 }
 
