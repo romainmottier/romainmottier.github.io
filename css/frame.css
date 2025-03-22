@@ -92,7 +92,7 @@ hr {
   /* LARGEUR MENU */
   position: relative;
   margin: 0 auto;
-  max-width: 1175px; 
+  max-width: 1200px; 
 }
 
 .menu .menu-table {
@@ -251,7 +251,7 @@ hr {
   font-weight: 300;
   line-height: 1.5;
   /* LARGEUR CONTENT */
-  max-width: 1175px; 
+  max-width: 1200px; 
   overflow-x: auto;
 }
 
