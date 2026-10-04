@@ -1,122 +1,91 @@
 <!doctype html>
-<html>
-
-<style>
-    li {
-        margin-bottom: -15px; 
-    }
-    p {
-        margin-bottom: -25px; 
-    }
-</style>
-
-
+<html lang="en">
 <head>
-    <title>Romain Mottier</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="" href="icons8-matlab-64.png"> 
-    <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
-    <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
-    <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/menu.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Romain Mottier</title>
+  <meta name="description" content="Romain Mottier, computational scientist in applied mathematics and physics, postdoctoral researcher at the University of Basel.">
+  <link rel="icon" href="icons8-matlab-64.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css">
+  <link rel="stylesheet" href="css/site.css">
 </head>
-
-
 <body>
-    <div class="menu-container"></div>
-    <div class="content-container">
-        <div class="content">
-            <div class="content-table flex-column">
-                <div class="flex-row">
-                    <div class="flex-item flex-column">
-                        <img class="image" id="me" src="img/me_maroc.jpg">
-                    </div>
-                    <div class="flex-item flex-column">
-                        <h2>Romain Mottier </h2> <br>
-                        <p class="text">
-                            Postdoc researcher in <b>computational physics</b> and <b>applied mathematics (numerical analysis)</b> <br>
-                            <a href="https://dmi.unibas.ch/en/" target="_blank"><FONT COLOR="#000000">University of Basel, Department of Mathematics and Computer Science </FONT></a><br>
-                            romain.mottier@outlook.com<br><br>
-                            Welcome to my academic webpage!
-                        </p>
-                    </div>
-                </div>
-                <div class="flex-row">
-                  <style>
-                    .text {
-                      margin-top: -0.2cm                    }
-                  </style>
-                    <div class="flex-item flex-column">
-                        <h2>About me</h2>
-                        <hr>
-                        <p class="text">
-                            <Div Align=justify> 
+<div class="layout">
 
-                                I am a <b>computational scientist</b> in applied mathematics and physics, currently a postdoctoral researcher at the University of Basel (Department of Mathematics and Computer Science).<br><br>
+  <aside class="profile">
+    <img class="avatar" src="img/me_maroc.jpg" alt="Romain Mottier">
+    <h1 class="name">Romain Mottier</h1>
+    <p class="role">Postdoc researcher in <b>computational physics</b> and <b>applied mathematics (numerical analysis)</b></p>
+    <p class="affil"><a href="https://dmi.unibas.ch/en/" target="_blank">University of Basel</a><br>Department of Mathematics and Computer Science</p>
+    <p class="email"><a href="mailto:romain.mottier@outlook.com">romain.mottier@outlook.com</a></p>
+    <ul class="links">
+      <li><a href="file/CV.pdf" title="CV" aria-label="CV"><i class="fa-solid fa-file-lines"></i></a></li>
+      <li><a href="https://github.com/romainmottier" target="_blank" title="GitHub" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+      <li><a href="https://linkedin.com/in/romain-mottier-computational-physics" target="_blank" title="LinkedIn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
+      <li><a href="https://scholar.google.fr/citations?user=tnQ3p_MAAAAJ&amp;hl=fr" target="_blank" title="Google Scholar" aria-label="Google Scholar"><i class="ai ai-google-scholar"></i></a></li>
+      <li><a href="https://www.researchgate.net/profile/Romain-Mottier-2/research" target="_blank" title="ResearchGate" aria-label="ResearchGate"><i class="ai ai-researchgate"></i></a></li>
+    </ul>
+  </aside>
 
-                                For five years I have been developing <b>simulation code</b> for engineering and physics problems &mdash; <b>wave propagation</b>, <b>solid&ndash;fluid interaction</b>, <b>geophysics</b>, <b>electromagnetics</b> and <b>planetary thermal modelling</b> &mdash; in <b>C++, Fortran and Python</b>, from PDE solver design and mathematical validation through to <b>large-scale parallel runs (MPI/OpenMP)</b> on HPC clusters.
+  <main>
+    <nav class="tabs"><a href="index.html" class="active">About</a><a href="publications.html">Publications &amp; Talks</a><a href="teaching.html">Teaching</a><span class="lang"><a href="index.html" class="active">EN</a><a href="index_fr.html">FR</a></span></nav>
+      <section>
+        <h2>About me</h2>
+        <div class="card">
+          <div class="item prose"><p>I am a <b>computational scientist</b> in applied mathematics and physics, currently a postdoctoral researcher at the University of Basel (Department of Mathematics and Computer Science).</p><p>For five years I have been developing <b>simulation code</b> for engineering and physics problems &mdash; <b>wave propagation</b>, <b>solid&ndash;fluid interaction</b>, <b>geophysics</b>, <b>electromagnetics</b> and <b>planetary thermal modelling</b> &mdash; in <b>C++, Fortran and Python</b>, from PDE solver design and mathematical validation through to <b>large-scale parallel runs (MPI/OpenMP)</b> on HPC clusters.</p></div>
+        </div>
+      </section>
+      <section>
+        <h2>Research interests</h2>
+        <div class="grid-2 about-grid">
+          <div class="col">
+        <div class="card">
+          <div class="item"><div class="item-head"><span class="item-title">Numerical methods</span></div><ul class="blist"><li>Finite element methods (FEM)</li><li>High-order nonconforming polytopal methods (HHO &ndash; HDG &ndash; dG)</li><li>Unfitted methods (embedded / immersed)</li><li>Explicit time integration and local time-stepping</li><li>Nonlinear PDEs (variable-exponent problems)</li><li>High-performance computing (MPI, OpenMP, OpenACC)</li></ul></div>
+        </div>
+        <div class="card">
+          <div class="item"><div class="item-head"><span class="item-title">Application domains</span></div><ul class="blist"><li>Wave propagation (elastic, acoustic, seismic)</li><li>Geophysics</li><li>Solid and fluid mechanics</li><li>Electromagnetics</li></ul></div>
+        </div>
+          </div>
+          <figure class="card sim">
+            <video autoplay muted loop playsinline preload="auto" poster="img/waves.webp" aria-label="3D animation of a seismic wave propagating in a layered subsurface with topography and into the atmosphere">
+              <source src="img/waves.webm" type="video/webm">
+              <source src="img/waves.mp4" type="video/mp4">
+            </video>
+            <figcaption>3D elasto-acoustic waves: a seismic pulse in a layered subsurface with topography and a sedimentary basin, coupled to the atmosphere.</figcaption>
+          </figure>
+        </div>
+      </section>
 
-                            </Div>
-                        </p>
-                        <h2 id="journal-paper">Research interests</h2>
-                        <hr>
-                        <p class="text-small-margin">
-                            <div class="col-container">
-                                <div class="col">
-                                    <li>
-                                        <b>Numerical methods:</b><br>
-                                    </li>
-                                    <p>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; Finite element methods (FEM)<br>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; High-order nonconforming polytopal methods (HHO - HDG - dG)<br>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; Unfitted methods (embedded / immersed)<br>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; Explicit time integration and local time-stepping<br>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; Nonlinear PDEs (variable-exponent problems)<br>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; High-performance computing (MPI, OpenMP, OpenACC)<br>
-
-                                    </p>
-                                </div>
-                                <div class="col">
-                                    <li>
-                                        <b>Application domains:</b><br>
-                                    </li>
-                                    <p>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; Wave propagation (elastic, acoustic, seismic)<br>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; Geophysics<br>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; Solid and fluid mechanics<br>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; Electromagnetics<br><br>
-                                    </p>
-                                </div>
-                            </div>         
-                            <!-- Experiences
-                                <h2 id="journal-paper">Previous experiences</h2>
-                                <hr>
-                                <p class="text-small-margin"></p>
-                                <li>
-                                    <b>Internships:</b><br>
-                                </li>
-                                <p>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; Implementation of Spectral Differences (SD) and a Compatible Discrete Operator (CDO) scheme to solve Maxwell equations.<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.onera.fr/en" target="_blank">French Office for Aerospace 
-                                    Studies and Research (ONERA)</a> , Toulouse (France), March - August 2021.<br>
-                                        
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; Numerical modeling of the temperature distribution on the surface and in the depths of Mercury.<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.esa.int/" target="_blank">European space agency (ESA)</a>, 
-                                    Nordwijck (Nederland), May - August 2020.<br><br>
-                                </p>
-                            </p> -->
-                            <!-- Awards
-                                <h2 id="award">Awards and Honors</h2>
-                                <hr> -->
-                                <br><br>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </body>   
-            </html>
+  </main>
+</div>
+<script>
+/* Même échelle et mêmes espacements sur toutes les pages. L'échelle se règle sur la hauteur de la fenêtre :
+   la page la plus dense (Publications) occupe environ 92 % de la hauteur, sans défilement. Écrans larges uniquement. */
+(function () {
+  var body = document.body, root = document.documentElement, wide = window.matchMedia("(min-width: 901px)");
+  var REF = 960, MAX = 1.02, MIN = 0.7;
+  function fits() { return root.scrollHeight <= window.innerHeight; }
+  function fit() {
+    body.style.zoom = "";
+    if (!wide.matches) return;
+    var z = Math.max(MIN, Math.min(MAX, window.innerHeight / REF));
+    body.style.zoom = z;
+    if (fits()) return;
+    var lo = MIN, hi = z;
+    for (var i = 0; i < 12; i++) { var m = (lo + hi) / 2; body.style.zoom = m; if (fits()) lo = m; else hi = m; }
+    body.style.zoom = lo;
+  }
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches)
+    document.querySelectorAll("video[autoplay]").forEach(function (v) { v.removeAttribute("autoplay"); v.pause(); });
+  fit();
+  window.addEventListener("load", fit);
+  window.addEventListener("resize", fit);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
+})();
+</script>
+</body>
+</html>

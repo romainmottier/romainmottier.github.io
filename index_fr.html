@@ -1,99 +1,91 @@
 <!doctype html>
-<html>
-
-<style>
-  li {
-    margin-bottom: -15px; /* Ajustez la valeur en fonction de l'espace souhaité */
-  }
-  p {
-    margin-bottom: -25px; /* Ajustez la valeur en fonction de l'espace souhaité */
-  }
-</style>
-
-
+<html lang="fr">
 <head>
-  <title>Romain Mottier</title>
   <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> icone de page --> 
-  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
-  <link rel="icon" type="" href="icons8-matlab-64.png"> 
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/menu.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Romain Mottier</title>
+  <meta name="description" content="Romain Mottier, spécialiste du calcul scientifique en mathématiques appliquées et en physique, postdoctorant à l'Université de Bâle.">
+  <link rel="icon" href="icons8-matlab-64.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css">
+  <link rel="stylesheet" href="css/site.css">
 </head>
-
-
 <body>
-  <div class="menu-container"></div>
-  <div class="content-container">
-    <div class="content">
-      <div class="content-table flex-column">
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <img class="image" id="me" src="img/me_maroc.jpg">
-          </div>
-          <div class="flex-item flex-column">
-            <h2>Romain Mottier</h2>
-            <p class="text">
-              Postdoctorant en <b>physique numérique</b> et en <b>mathématiques appliquées (analyse numérique)</b><br>
-              <a href="https://dmi.unibas.ch/en/" target="_blank"><FONT COLOR="#000000">Université de Bâle, Département de mathématiques et d'informatique</FONT></a><br>
-              romain.mottier@outlook.com
-            </p>
-          </div>
-        </div>
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <h2>À propos</h2>
-            <hr>
-            <p class="text">
-              <Div Align=justify> 
-                Je suis <b>spécialiste du calcul scientifique</b> en mathématiques appliquées et en physique, actuellement postdoctorant à l'Université de Bâle (Département de mathématiques et d'informatique).<br><br>
+<div class="layout">
 
-                Depuis cinq ans, je développe des <b>codes de simulation</b> pour des problèmes d'ingénierie et de physique &mdash; <b>propagation d'ondes</b>, <b>interaction solide&ndash;fluide</b>, <b>géophysique</b>, <b>électromagnétisme</b> et <b>modélisation thermique planétaire</b> &mdash; en <b>C++, Fortran et Python</b>, de la conception des solveurs d'EDP et de leur validation mathématique jusqu'aux <b>calculs parallèles à grande échelle (MPI/OpenMP)</b> sur supercalculateurs.
-              </Div>
-            </p>
+  <aside class="profile">
+    <img class="avatar" src="img/me_maroc.jpg" alt="Romain Mottier">
+    <h1 class="name">Romain Mottier</h1>
+    <p class="role">Postdoctorant en <b>physique numérique</b> et en <b>mathématiques appliquées (analyse numérique)</b></p>
+    <p class="affil"><a href="https://dmi.unibas.ch/en/" target="_blank">Université de Bâle</a><br>Département de mathématiques et d'informatique</p>
+    <p class="email"><a href="mailto:romain.mottier@outlook.com">romain.mottier@outlook.com</a></p>
+    <ul class="links">
+      <li><a href="file/CV.pdf" title="CV" aria-label="CV"><i class="fa-solid fa-file-lines"></i></a></li>
+      <li><a href="https://github.com/romainmottier" target="_blank" title="GitHub" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+      <li><a href="https://linkedin.com/in/romain-mottier-computational-physics" target="_blank" title="LinkedIn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
+      <li><a href="https://scholar.google.fr/citations?user=tnQ3p_MAAAAJ&amp;hl=fr" target="_blank" title="Google Scholar" aria-label="Google Scholar"><i class="ai ai-google-scholar"></i></a></li>
+      <li><a href="https://www.researchgate.net/profile/Romain-Mottier-2/research" target="_blank" title="ResearchGate" aria-label="ResearchGate"><i class="ai ai-researchgate"></i></a></li>
+    </ul>
+  </aside>
 
-          <h2 id="journal-paper">Domaines d'intérêt</h2>
-          <hr>
-          <p class="text-small-margin">
-          <div class="col-container">
-            <div class="col">
-              <li>
-                <b>Méthodes numériques :</b><br>
-              </li>
-              <p>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; Méthodes des éléments finis (FEM)<br> 
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; Méthodes polytopales non conformes d'ordre élevé (HHO - HDG - dG)<br> 
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; Méthodes « unfitted » (embedded / immersed)<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; Intégration en temps explicite et pas de temps local<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; EDP non linéaires (problèmes à exposant variable)<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; Calcul haute performance (MPI, OpenMP, OpenACC)<br>
-              </p>
-            </div>
-            <div class="col">
-              <li>
-                <b>Domaines d'application :</b><br>
-              </li>
-              <p>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; Propagation d'ondes (élastiques, acoustiques, sismiques)<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; Géophysique<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; Mécanique des solides et des fluides<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; Électromagnétisme<br><br>
-              </p>
-            </div>
-          </div>
-          <br><br>
-          <!-- Awards
-          <h2 id="award">Awards and Honors</h2>
-          <hr> -->
+  <main>
+    <nav class="tabs"><a href="index_fr.html" class="active">À propos</a><a href="publications.html">Publications et exposés</a><a href="teaching.html">Enseignement</a><span class="lang"><a href="index.html">EN</a><a href="index_fr.html" class="active">FR</a></span></nav>
+      <section>
+        <h2>À propos</h2>
+        <div class="card">
+          <div class="item prose"><p>Je suis <b>spécialiste du calcul scientifique</b> en mathématiques appliquées et en physique, actuellement postdoctorant à l'Université de Bâle (Département de mathématiques et d'informatique).</p><p>Depuis cinq ans, je développe des <b>codes de simulation</b> pour des problèmes d'ingénierie et de physique &mdash; <b>propagation d'ondes</b>, <b>interaction solide&ndash;fluide</b>, <b>géophysique</b>, <b>électromagnétisme</b> et <b>modélisation thermique planétaire</b> &mdash; en <b>C++, Fortran et Python</b>, de la conception des solveurs d'EDP et de leur validation mathématique jusqu'aux <b>calculs parallèles à grande échelle (MPI/OpenMP)</b> sur supercalculateurs.</p></div>
         </div>
-      </div>
-    </div>
-  </div>
+      </section>
+      <section>
+        <h2>Domaines d'intérêt</h2>
+        <div class="grid-2 about-grid">
+          <div class="col">
+        <div class="card">
+          <div class="item"><div class="item-head"><span class="item-title">Méthodes numériques</span></div><ul class="blist"><li>Méthodes des éléments finis (FEM)</li><li>Méthodes polytopales non conformes d'ordre élevé (HHO &ndash; HDG &ndash; dG)</li><li>Méthodes « unfitted » (embedded / immersed)</li><li>Intégration en temps explicite et pas de temps local</li><li>EDP non linéaires (problèmes à exposant variable)</li><li>Calcul haute performance (MPI, OpenMP, OpenACC)</li></ul></div>
+        </div>
+        <div class="card">
+          <div class="item"><div class="item-head"><span class="item-title">Domaines d'application</span></div><ul class="blist"><li>Propagation d'ondes (élastiques, acoustiques, sismiques)</li><li>Géophysique</li><li>Mécanique des solides et des fluides</li><li>Électromagnétisme</li></ul></div>
+        </div>
+          </div>
+          <figure class="card sim">
+            <video autoplay muted loop playsinline preload="auto" poster="img/waves.webp" aria-label="Animation 3D d'une onde sismique se propageant dans un sous-sol stratifié avec relief et dans l'atmosphère">
+              <source src="img/waves.webm" type="video/webm">
+              <source src="img/waves.mp4" type="video/mp4">
+            </video>
+            <figcaption>Ondes élasto-acoustiques en 3D : impulsion sismique dans un sous-sol stratifié avec relief et bassin sédimentaire, couplé à l'atmosphère.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+  </main>
+</div>
+<script>
+/* Même échelle et mêmes espacements sur toutes les pages. L'échelle se règle sur la hauteur de la fenêtre :
+   la page la plus dense (Publications) occupe environ 92 % de la hauteur, sans défilement. Écrans larges uniquement. */
+(function () {
+  var body = document.body, root = document.documentElement, wide = window.matchMedia("(min-width: 901px)");
+  var REF = 960, MAX = 1.02, MIN = 0.7;
+  function fits() { return root.scrollHeight <= window.innerHeight; }
+  function fit() {
+    body.style.zoom = "";
+    if (!wide.matches) return;
+    var z = Math.max(MIN, Math.min(MAX, window.innerHeight / REF));
+    body.style.zoom = z;
+    if (fits()) return;
+    var lo = MIN, hi = z;
+    for (var i = 0; i < 12; i++) { var m = (lo + hi) / 2; body.style.zoom = m; if (fits()) lo = m; else hi = m; }
+    body.style.zoom = lo;
+  }
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches)
+    document.querySelectorAll("video[autoplay]").forEach(function (v) { v.removeAttribute("autoplay"); v.pause(); });
+  fit();
+  window.addEventListener("load", fit);
+  window.addEventListener("resize", fit);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
+})();
+</script>
 </body>
 </html>
